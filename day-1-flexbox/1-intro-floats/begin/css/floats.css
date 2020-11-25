@@ -5,39 +5,95 @@ html {
 }
 /* inherit border-box on all elements in the universe and before and after
  */
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
 
 body {
-	font-family: Arial, Geneva, sans-serif;
+  font-family: Arial, Geneva, sans-serif;
 }
 a {
-	color: #2772B0;
+  color: #2772b0;
 }
 .wrapper {
-	width: 97%;
-	max-width: 1200px;
-	margin: 0 auto;
-	float: none;
-	background-color: #fff;
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  background-color: #fff;
 }
 
 div img {
-	width: 100%;
-	max-width: 225px; 
+  width: 100%;
+  max-width: 225px;
 }
 
 /* grid system -- mobile first! */
 
-
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
-
+@media only screen and (min-width: 480px) {
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+  div[class*="row"] {
+    display: flex;
+    margin: 0 auto;
+  }
 
+  .row1 {
+    width: 100%;
+  }
+
+  .row1 article {
+    width: 25%;
+    background: lightyellow;
+  }
+
+  .row1 .article2 {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .row1 .article3 {
+    margin-right: 35px;
+  }
+
+  .row2 {
+    width: 100%;
+  }
+
+  .row2 article {
+    width: 50%;
+    background: magenta;
+  }
+
+  .row2 .article1 {
+    margin-right: 35px;
+  }
+
+  .row3 {
+    width: 100%;
+  }
+
+  .row3 .article1 {
+    width: 25%;
+    margin-right: 35px;
+    background: lightyellow;
+  }
+
+  .row3 .article2 {
+    width: 75%;
+    background: cadetblue;
+  }
+
+  .row4 {
+    width: 100%;
+  }
+
+  .row4 article {
+    width: 100%;
+    background: mediumpurple;
+  }
 }
